@@ -1,5 +1,6 @@
 import {SafeAreaView, StatusBar, Text} from 'react-native';
 import {SignIn} from './signin';
+import {VideoStreaming} from './video';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
@@ -13,7 +14,7 @@ const Screens = () => {
         <Stack.Navigator>
           <Stack.Screen
             name="Home"
-            component={SignIn}
+            component={VideoStreaming}
             options={{headerShown: false}}
           />
         </Stack.Navigator>
